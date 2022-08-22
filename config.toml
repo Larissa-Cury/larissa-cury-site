@@ -78,17 +78,17 @@ enableEmoji = true
       icon_pack = "fab"
       url       = "https://github.com/Larissa-Cury"
   [[params.social]]
-      icon      = "facebook-square" # icon name without the 'fa-'
+      icon      = "orcid" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "https://www.facebook.com/hashtag/ap%C3%A9ro"
+      url       = "https://orcid.org/0000-0002-3184-8982"
   [[params.social]]
       icon      = "instagram" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "https://www.instagram.com/explore/tags/apero/"
-  [[params.social]]
-      icon      = "twitter" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://twitter.com/hashtag/apéro"
+ ## [[params.social]]
+ ##      icon      = "twitter" # icon name without the 'fa-'
+ ##      icon_pack = "fab"
+ ##      url       = "https://twitter.com/hashtag/apéro"
   [[params.social]]
       icon      = "rss" # icon name without the 'fa-'
       icon_pack = "fas"
