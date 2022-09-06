@@ -28,7 +28,7 @@ enableEmoji = true
     style = "github"
     
 [params]
-  orgName = "RStudio"
+  orgName = "Larissa Cury"
   orgLocal = "Porto Alegre"
   description = "A modern, beautiful, and easily configurable blog theme for Hugo."
   favicon = "/img/favicon.ico"
@@ -74,25 +74,25 @@ enableEmoji = true
   # Icon pack "fas" includes solid icons, see: https://fontawesome.com/icons?d=gallery&s=solid&m=free
   # Icon pack "far" includes regular icons, see: https://fontawesome.com/icons?d=gallery&s=regular&m=free
   [[params.social]]
-      icon      = "github" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://github.com/Larissa-Cury"
+      icon      = "lattes" # icon name without the 'fa-'
+      icon_pack = "ai"
+      url       = "http://lattes.cnpq.br/2114119985676424"
   [[params.social]]
       icon      = "orcid" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "https://orcid.org/0000-0002-3184-8982"
   [[params.social]]
-      icon      = "instagram" # icon name without the 'fa-'
+      icon      = "github" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "https://www.instagram.com/explore/tags/apero/"
- ## [[params.social]]
+      url       = "https://github.com/Larissa-Cury"
+  ## [[params.social]]
  ##      icon      = "twitter" # icon name without the 'fa-'
  ##      icon_pack = "fab"
  ##      url       = "https://twitter.com/hashtag/apéro"
-  [[params.social]]
-      icon      = "rss" # icon name without the 'fa-'
-      icon_pack = "fas"
-      url       = "/blog/index.xml"
+##  [[params.social]]
+  ##    icon      = "rss" # icon name without the 'fa-'
+  ##    icon_pack = "fas"
+  ##    url       = "/blog/index.xml"
 
 [taxonomies]
   category = "categories"
