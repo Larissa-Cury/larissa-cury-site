@@ -12,12 +12,11 @@ layout: list-sidebar # list, list-sidebar, list-grid
 
 # for list-sidebar layout
 sidebar: 
-  title: A Sidebar for Larissa's Thoughts
+  title: Blog em Português
   description: |
     Neste blog, vamos aprender juntos!
     
-    Check out the _index.md file in the /blog folder 
-    to edit this content. 
+    
   author: "Larissa Cury"
   text_link_label: " "
   text_link_url: /index.xml

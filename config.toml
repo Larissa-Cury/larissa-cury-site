@@ -106,20 +106,25 @@ enableEmoji = true
     url = "/about/"
     weight = 1
   [[menu.header]]
-    name = "Blog"
+    name = "Blog em Português"
     title = "Blog"
     url = "/blog/"
     weight = 2
-  [[menu.header]]
-    name = "Projects"
-    title = "Project Portfolio"
-    url = "/project/"
-    weight = 3
-  [[menu.header]]
-    name = "Talks"
-    title = "Talks"
-    url = "/talk/"
-    weight = 4
+ ##[[menu.header]]
+ ##    name = "Blog in English"
+##    title = "Blog"
+##    url = "/blog/"
+##    weight = 2
+ ## [[menu.header]]
+ ##    name = "Projects"
+ ##    title = "Project Portfolio"
+ ##    url = "/project/"
+ ##    weight = 3
+ ##  [[menu.header]]
+ ##    name = "Talks"
+ ##    title = "Talks"
+ ##    url = "/talk/"
+ ##    weight = 4
     
   # Configure footer  
   ## [[menu.footer]]
