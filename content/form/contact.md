@@ -10,7 +10,7 @@ layout: split-right # split-right or split-left
 submit_button_label: Send Message
 show_social_links: true # specify social accounts in site config
 show_poweredby_formspree: true
-formspree_form_id: https://formspree.io/f/xwkzqrzr
+formspree_form_id: xwkzqrzr
 ---
 
 ** Contact page don't contain a body, just the front matter above.
