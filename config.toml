@@ -133,7 +133,7 @@ enableEmoji = true
   ##  url = "/license/"
   ##  weight = 1
   [[menu.footer]]
-    name = "Contact"
+    name = "Contato"
     title = "Contact form"
     url = "/contact/"
     weight = 2
