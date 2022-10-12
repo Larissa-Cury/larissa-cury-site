@@ -1,5 +1,5 @@
 ---
-title: A Blog That Works
+title: Blog em Português
 description: |
   This is a fully featured blog that supports categories, 
   tags, series, and pagination.
@@ -14,14 +14,12 @@ layout: list-sidebar # list, list-sidebar, list-grid
 sidebar: 
   title: A Sidebar for Larissa's Thoughts
   description: |
-    This is a fully featured blog that supports categories,
-    tags, series, and pagination. Even this sidebar offers 
-    a ton of customizations.
+    Neste blog, vamos aprender juntos!
     
     Check out the _index.md file in the /blog folder 
     to edit this content. 
   author: "Larissa Cury"
-  text_link_label: Subscribe via RSS
+  text_link_label: " "
   text_link_url: /index.xml
   show_sidebar_adunit: false # show ad container
 

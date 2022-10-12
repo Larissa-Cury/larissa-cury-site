@@ -3,8 +3,8 @@
 text_align_right: false
 show_title_as_headline: true
 headline: |
-  Hi, my name is Larissa Cury. Nice to meet you.
+  Olá, meu nome é Larissa. Prazer em te conhecer!.
 ---
 
 <!-- this is a subheadline -->
-I'm a "carioca" (born and raised in Rio de Janeiro, Brazil) and I hold a degree in Languages: Portuguese and English from the Federal University of Rio de Janeiro. I'm currently taking my Master's degree in Psycholinguistics at the Federal University of Rio Grande do Sul (in the South!). I've always been passionate about learning, though I've never thought that one day I'd be diving into the world of Statistics and Programming (but once you start, there's no going back!). I hope this portal becomes a great opportunity to share learning experiences. &#128513;
+<p align= "justify">Sou formada em Letras: Português e Inglês pela Universidade Federal do Rio de Janeiro (UFRJ). Hoje faço mestrado em Psicolinguística na Universidade Federal do Rio Grande do Sul (UFRGS), com ênfase na Psicolinguística do Bilinguismo. Sempre fui apaixonada por aprender, embora nunca tenha pensado que um dia estaria mergulhando no mundo da Estatística e da Programação (mas, uma vez ele, não tem mais volta!). Espero que este portal se torne uma grande oportunidade para compartilhar experiências de aprendizado! &#128513; </p>

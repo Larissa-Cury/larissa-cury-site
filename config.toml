@@ -1,7 +1,7 @@
 baseURL = "/"
 theme = "hugo-apero"
 languageCode = "en"
-title = "Personal website of Larissa Cury"
+title = "Site pessoal de Larissa Cury"
 author = "Larissa Cury"
 copyright = "" # set to override the auto generated copyright using org info and now year
 googleAnalytics = ""
@@ -43,7 +43,7 @@ enableEmoji = true
   # Place image file in `static` folder and specify image name here.
   sharing_image = "/img/papillons.jpg"
   # Twitter username (without @). Used when a visitor shares your site on Twitter.
-  twitter = "apreshill"
+  twitter = "larissascury"
   
   # use a built-in color theme
   # one of: forest / grayscale / peach / plum /
@@ -85,10 +85,10 @@ enableEmoji = true
       icon      = "github" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "https://github.com/Larissa-Cury"
-  ## [[params.social]]
- ##      icon      = "twitter" # icon name without the 'fa-'
- ##      icon_pack = "fab"
- ##      url       = "https://twitter.com/hashtag/apéro"
+   [[params.social]]
+       icon      = "twitter" # icon name without the 'fa-'
+       icon_pack = "fab"
+       url       = "https://twitter.com/larissascury"
 ##  [[params.social]]
   ##    icon      = "rss" # icon name without the 'fa-'
   ##    icon_pack = "fas"
@@ -122,11 +122,11 @@ enableEmoji = true
     weight = 4
     
   # Configure footer  
-  [[menu.footer]]
-    name = "License"
-    title = "License"
-    url = "/license/"
-    weight = 1
+  ## [[menu.footer]]
+  ##  name = "License"
+  ##  title = "License"
+  ##  url = "/license/"
+  ##  weight = 1
   [[menu.footer]]
     name = "Contact"
     title = "Contact form"
