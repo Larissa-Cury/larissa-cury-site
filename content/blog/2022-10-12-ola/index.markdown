@@ -1,7 +1,7 @@
 ---
 title: "meninas não sabem que não devem gostar de computadores"
 subtitle: ""
-excerpt: "An .Rmarkdown post"
+excerpt: "uma provocação inicial"
 date: 2022-10-12
 author: "Larissa Cury"
 draft: false
@@ -9,14 +9,14 @@ images:
 series:
 tags: 
 categories:
-layout: single
+layout: single # layout options: single, single-sidebar
 ---
 
 ## Olá, bem vindo(a) ao primeiro post!
 
 Meu nome é **Larissa**, sou formada em **Letras: Português-Inglês**, e meu objetivo aqui é falar de **estatística** e **linguagem(ns) de programação**. Não, você não leu errado (eu juro, pode ler novo!). Você pode conhecer mais sobre mim [aqui][1] &#128513;
 
-<center><a href="https://www.youtube.com/watch?v=-jRREn6ifEQ&t=1s" target="_blank"><img src="https://i.ytimg.com/an_webp/-jRREn6ifEQ/mqdefault_6s.webp?du=3000&sqp=COSPnJoG&rs=AOn4CLC-2r509fVoEmXGj38vXQQDu4tQjA" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<center><a href="https://www.youtube.com/watch?v=-jRREn6ifEQ&t=1s" target="_blank"><img src="https://i.ytimg.com/an_webp/-jRREn6ifEQ/mqdefault_6s.webp?du=3000&sqp=CITGoJoG&rs=AOn4CLAmyWKKIEZt91VM8ds4NAIWKmQwXg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 </center> <center>TED Talk de Linda Liukas</center>
 
 Escutei que ***"meninas não sabem que não devem gostar de computadores"*** na TED Talk encantadora da programadora Linda Liukas (clique na imagem acima). Como a Linda bem diz, eu não só concordo que, quando somos crianças, ainda estamos alhei**a**s às determinações sociais de que "computadores são difícies, não são coisa para mulheres", mas vou além! A sensação que tenho é a de que para nós, das ciências humanas, fazer qualquer coisa que minimamente envolva números seria ou como cometer um crime capital ou como fazer algo completamente inimaginável, diria que praticamente utópico. Remando contra a maré, eu acredito que sim, **é possível** e que, sobretudo, **deva** ser possível. 

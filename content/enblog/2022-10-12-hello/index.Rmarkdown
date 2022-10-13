@@ -1,7 +1,7 @@
 ---
-title: "meninas não sabem que não devem gostar de computadores"
+title: "little girls don't know that they're not supposed to like computers"
 subtitle: ""
-excerpt: "uma provocação inicial"
+excerpt: "an inicial thought"
 date: 2022-10-12
 author: "Larissa Cury"
 draft: false
@@ -12,9 +12,11 @@ categories:
 layout: single # layout options: single, single-sidebar
 ---
 
-## Olá, bem vindo(a) ao primeiro post!
+## Hello, welcome to the first post!
 
-Meu nome é **Larissa**, sou formada em **Letras: Português-Inglês**, e meu objetivo aqui é falar de **estatística** e **linguagem(ns) de programação**. Não, você não leu errado (eu juro, pode ler novo!). Você pode conhecer mais sobre mim [aqui][1] &#128513;
+I’m a “carioca” (born and raised in Rio de Janeiro, Brazil) and and I hold a Licentiate in Arts: **Portuguese and English Languages Degree** from the Federal University of Rio de Janeiro (UFRJ). I’m currently taking my Master’s degree in **Psycholinguistics**, mainly focused on the **Psycholinguistics of Bilingualism**, at the Federal University of Rio Grande do Sul (in the South!), under the supervision of professor Ingrid Finger, my academic advisor. I’ve always been passionate about learning, though I’ve never thought that one day I’d be diving into the world of Statistics and Programming (but once you start, there’s no going back!). I hope this portal becomes a great opportunity to share learning experiences. &#128513;
+
+Although my academic background is pretty much in the Humanities, my aim here is to talk about **statistics** and **programming language(s)**. Yep, that's right, you haven't read it wrong. (I swear, you can read that again!). 
 
 <center><a href="https://www.youtube.com/watch?v=-jRREn6ifEQ&t=1s" target="_blank"><img src="https://i.ytimg.com/an_webp/-jRREn6ifEQ/mqdefault_6s.webp?du=3000&sqp=CITGoJoG&rs=AOn4CLAmyWKKIEZt91VM8ds4NAIWKmQwXg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 </center> <center>TED Talk de Linda Liukas</center>
