@@ -32,12 +32,12 @@ cascade:
     text_link_label: ""
     text_link_url: ""
     show_sidebar_adunit: false # show ad container
-    text_series_label: "In this series" 
-    text_contents_label: "On this page" 
+    text_series_label: "Nesta série" 
+    text_contents_label: "Nesta página" 
   tags:
   - hugo-site
   categories:
-  - Theme Features
+  # - Theme Features
   - R
 ---
 

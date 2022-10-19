@@ -37,7 +37,7 @@ cascade:
   tags:
   - hugo-site
   categories:
-  - Theme Features
+  # - Theme Features
   - R
 ---
 

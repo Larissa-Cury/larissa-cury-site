@@ -3,7 +3,7 @@ title: "R Studio's essential functions"
 weight: 1
 subtitle: ""
 excerpt: "A series of R Studio's essential functions"
-date: 2022-20-19
+date: 2022-10-19
 draft: false
 ---
 

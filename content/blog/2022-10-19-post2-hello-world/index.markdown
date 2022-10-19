@@ -1,7 +1,7 @@
 ---
 title: "olá, linguista!"
 subtitle: ""
-excerpt: "onde tudo começa: por que esse nome?!"
+excerpt: "onde tudo começa: <i>por que esse nome</i>?!"
 date: 2022-10-19
 author: "Larissa Cury"
 draft: false
@@ -10,7 +10,6 @@ series:
 tags: 
 categories:
 layout: single # layout options: single, single-sidebar
-geometry: "left=2cm, right=2cm, top=2cm, bottom=2cm"
 ---
 
 Tradicionalmente, a primeira linha de código que aprendemos quando vamos conhecer uma linguagem de programação é **"hello, world"**. Essa expressão ficou cunhada no livro *"The C Programming Language"* (Kernighan, 1972). Printar essa *string* é a porta de entrada para o mundo da programação, eu diria que quase um ritual de passagem (o que gera muitos [memes][3] divertidos), você pode conferir mais exemplos [aqui][2]. Foi pensando nisso que nasceu o nome ***Olá, Linguista!*** como uma referência direta ao ***Hello, World!*** &#128521;

@@ -3,7 +3,7 @@ title: "Funções essenciais no RStudio"
 weight: 1
 subtitle: ""
 excerpt: "Série de posts sobre funções essenciais no RStudio"
-date: 2022-20-19
+date: 2022-10-19
 draft: false
 ---
 
