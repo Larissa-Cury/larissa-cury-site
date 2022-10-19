@@ -1,7 +1,7 @@
 ---
 title: "hello, linguist!"
 subtitle: ""
-excerpt: "where it all begins: why <i>hello, linguistic</i> ?!"
+excerpt: "where it all begins: why <i>hello, linguist</i> ?!"
 date: 2022-10-19
 author: "Larissa Cury"
 draft: false

@@ -1,7 +1,7 @@
 ---
-title: Funções essenciais no RStudio
+title: R Studio's essential functions
 description: |
-  Série de posts com essenciais legais no RStudio
+  A series of R Studio's essential functions
 author: Larissa Cury
 show_post_thumbnail: false
 show_author_byline: true
@@ -11,12 +11,12 @@ layout: list-sidebar # list, list-sidebar, list-grid
 
 # for list-sidebar layout
 sidebar: 
-  title: Funções essenciais no RStudio
+  title: R Studio's essential functions
   author: Larissa Cury
   description: |
     
     
-    Nesta série, vamos ver algumas funções essenciais no RStudio!
+    We'll dive into R Studio's essential functions!
   text_link_label: ""
   text_link_url: ""
   show_sidebar_adunit: false # show ad container
@@ -24,7 +24,7 @@ sidebar:
 # set up common front matter for all individual pages in series
 cascade:
   layout: single-series       # for a series, do not change
-  series: Funções essenciais no RStudio  # name your series
+  series: R Studio's essential functions  # name your series
   author: Larissa Cury
   show_author_byline: true
   show_post_date: true
