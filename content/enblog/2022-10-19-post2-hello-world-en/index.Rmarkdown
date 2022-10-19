@@ -1,0 +1,59 @@
+---
+title: "hello, linguist!"
+subtitle: ""
+excerpt: "where it all begins: why <i>hello, linguistic</i> ?!"
+date: 2022-10-19
+author: "Larissa Cury"
+draft: false
+images:
+series:
+tags: 
+categories:
+layout: single # layout options: single, single-sidebar
+---
+
+Traditionally, the first thing one has to know when learning a new programming language is how to print **hello, world!**. This expression was first introduced in 1972, in Kernighan's *"The C Programming Language"*. Nowadays, I'd say that printing it is almost an rite of passage to enter the programming world (which leaves us with many fun [memes][3]). You can learn more about its history [here][2]. That being said, this is how I came up with ***Hello, Linguist!***, as a direct reference to ***Hello, World!*** &#128521;
+
+Enough talking! Shall we practice a bit in **R Studio** and **Google Chrome**?!
+
+## R Studio:
+
+> Step 1: type **print("Hello, World!")** <br> 
+Step 2: press **CTRL + Enter**
+
+```{r}
+print("Hello, World!")
+```
+
+> Step 3: **Congrats!**, this is your first code! &#128513;
+
+## Google Chrome:
+
+> Step 1: on a new Google Chrome tab, press **"CTRL + SHIFT + j"**, which will open the "Console":
+
+![](images/paste-BAC7B81B.png)
+
+> Step 2: type: **alert("Hello, world!")** and press **enter**:
+
+![](images/paste-FB53F6F3.png)
+
+> Step 3: **Congrats!** This is your first code! &#128513;
+
+![](images/paste-52EEFB02.png)
+
+> The ```print()``` function asks RStudio "please, show my string in the 'console'". In this case, our *string* is *Hello, World*. A *string* is a sequence of characters. Using Chrome, ```alert()``` will create an [alert box][1] showing what we've asked to be printed there.
+
+> Be it in RStudio or in Google Chrome, you may use ```print()``` and ```alert()``` to print any string! You may also play with numbers and letters, but be aware that the programs will understand anything that comes inside quotation marks as being part of the *string*. Take a look: 
+
+```{r}
+print("My name is Larissa, I was born in 1998!") # letters and numbers
+print("Linguistics & stats are fun!") # special characters
+print("Hello, linguistic!") # the classic string
+```
+> **Enjoy it!** <br>
+
+🐕 Au-au! Today we learned about the expression *"Hello, world!"*, which is, traditionally, the first line of code of any developer. We learned how to print it using RStudio's ```print()``` function and using Google Chrome's console with ```alert()```. Now you may try to print other strings! See you soon!
+
+[1]: https://www.w3schools.com/jsref/met_win_alert.asp
+[2]: https://www.thesoftwareguild.com/blog/the-history-of-hello-world/#:~:text=Traditionally%2C%20Hello%20World%20programs%20are,World%20both%20easily%20and%20correctly.
+[3]: https://www.google.com/search?q=memes+hello+world+&tbm=isch&ved=2ahUKEwid_PO0suz6AhX8s5UCHXtZBY0Q2-cCegQIABAA&oq=memes+hello+world+&gs_lcp=CgNpbWcQAzIECCMQJzIGCAAQCBAeMgYIABAIEB4yBggAEAgQHjIGCAAQCBAeUKQFWOUPYMUTaABwAHgAgAG1AYgBwgmSAQMwLjmYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=7fpPY93RKPzn1sQP-7KV6Ag&bih=664&biw=1536
