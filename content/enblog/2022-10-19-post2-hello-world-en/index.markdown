@@ -81,3 +81,32 @@ print("Hello, linguistic!") # the classic string
 [1]: https://www.w3schools.com/jsref/met_win_alert.asp
 [2]: https://www.thesoftwareguild.com/blog/the-history-of-hello-world/#:~:text=Traditionally%2C%20Hello%20World%20programs%20are,World%20both%20easily%20and%20correctly.
 [3]: https://www.google.com/search?q=memes+hello+world+&tbm=isch&ved=2ahUKEwid_PO0suz6AhX8s5UCHXtZBY0Q2-cCegQIABAA&oq=memes+hello+world+&gs_lcp=CgNpbWcQAzIECCMQJzIGCAAQCBAeMgYIABAIEB4yBggAEAgQHjIGCAAQCBAeUKQFWOUPYMUTaABwAHgAgAG1AYgBwgmSAQMwLjmYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=7fpPY93RKPzn1sQP-7KV6Ag&bih=664&biw=1536
+
+
+<!-- ## But first, a shortcode trick -->
+
+<!-- Courtesy of panelset.js by Garrick Aden-Buie, from his xaringanExtra package: https://pkg.garrickadenbuie.com/xaringanExtra/#/panelset -->
+
+<!-- For example, this panelset: -->
+
+<!-- {{< panelset class="greetings" >}} -->
+<!-- {{< panel name="Hello! :wave:" >}} -->
+<!--   hello -->
+<!-- {{< /panel >}} -->
+<!-- {{< panel name="Goodbye :dash:" >}} -->
+<!--   goodbye -->
+<!-- {{< /panel >}} -->
+<!-- {{< /panelset  >}} -->
+
+<!-- Was created by combining this theme's `panelset` and `panel` shortcodes: -->
+
+<!-- ```go -->
+<!-- {{</* panelset class="greetings" */>}} -->
+<!-- {{</* panel name="Hello! :wave:" */>}} -->
+<!--   hello -->
+<!-- {{</* /panel */>}} -->
+<!-- {{</* panel name="Goodbye :dash:" */>}} -->
+<!--   goodbye -->
+<!-- {{</* /panel */>}} -->
+<!-- {{</* /panelset */>}} -->
+<!-- ``` -->
