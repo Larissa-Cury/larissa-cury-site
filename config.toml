@@ -1,4 +1,4 @@
-baseURL = "larissascury.rbind.io/"
+baseURL = "larissascury.rbind.io"
 theme = "hugo-apero"
 languageCode = "en"
 title = "Site pessoal de Larissa Cury"
