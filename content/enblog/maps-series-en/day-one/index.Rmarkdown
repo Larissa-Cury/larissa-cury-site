@@ -105,7 +105,7 @@ day1 <- ggplot() +
        y = "Latitude",
        color = "University:",
        title = "Distance between 'Faculdade de Letras' (UFRJ) and 'Instituto de Letras' (UFRGS)") +
-  ylim(-33, -10) + 
+  ylim(-33, -10) + # adjust the y-axis
   theme(legend.position = "right",
         legend.background = element_rect(color = "black"),  # legend block
         axis.text.x = element_text(angle = 0, hjust = 0.5, face = "bold"), # caption
