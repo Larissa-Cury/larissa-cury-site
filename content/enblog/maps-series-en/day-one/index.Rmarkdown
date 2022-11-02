@@ -97,7 +97,7 @@ day1 <- ggplot() +
   geom_sf(data = BRA, fill = "#D3D3D3") + # plot Brazil's map behind it
   geom_sf(data = States, color = "black", fill = "#96DED1") + # color of the map's border (color); color inside of it (fill)
   geom_line(data = dat, aes(x = lon, y = lat)) +
-  geom_point(data = dat, aes(x = lon, y = lat, color = Names), size = 3.5, shape = 18) +
+  geom_point(data = dat, aes(x = lon, y = lat, color = Names), size = 3.5, shape = 18) + # since the challenge required a map with points
   scale_color_manual(values=c("red", "#800020")) +
   theme_light() + 
   geom_text(aes(x = -42, y = -26, label = str_glue("{round(distance/1000, 2)} km"))) +

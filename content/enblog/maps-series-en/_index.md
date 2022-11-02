@@ -11,7 +11,7 @@ layout: list-sidebar # list, list-sidebar, list-grid
 
 # for list-sidebar layout
 sidebar: 
-  title: A series for 30DayMapChallenge
+  title: A series for 30DayMapChallenge on Twitter
   author: Larissa Cury
   description: |
     
