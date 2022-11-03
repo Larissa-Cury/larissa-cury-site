@@ -50,7 +50,7 @@ rivers <- ne_download(scale = 10, type = 'rivers_lake_centerlines',
                         category = 'physical', returnclass = "sf")
 
 ### plot the whole df if you want to: 
-##plot(rivers)
+## plot(rivers)
 
 ### some attempts to plot the rivers within Brazil's borders:
 ### As yesterday's map, filter Brazil: 

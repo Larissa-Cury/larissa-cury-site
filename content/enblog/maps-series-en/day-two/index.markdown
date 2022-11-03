@@ -54,7 +54,7 @@ rivers <- ne_download(scale = 10, type = 'rivers_lake_centerlines',
 
 ```
 ## OGR data source with driver: ESRI Shapefile 
-## Source: "C:\Users\laris\AppData\Local\Temp\RtmpMzpcxV", layer: "ne_10m_rivers_lake_centerlines"
+## Source: "C:\Users\laris\AppData\Local\Temp\RtmpW2Bt2R", layer: "ne_10m_rivers_lake_centerlines"
 ## with 1473 features
 ## It has 38 fields
 ## Integer64 fields read as strings:  ne_id
@@ -62,7 +62,7 @@ rivers <- ne_download(scale = 10, type = 'rivers_lake_centerlines',
 
 ```r
 ### plot the whole df if you want to: 
-##plot(rivers)
+## plot(rivers)
 
 ### some attempts to plot the rivers within Brazil's borders:
 ### As yesterday's map, filter Brazil: 
