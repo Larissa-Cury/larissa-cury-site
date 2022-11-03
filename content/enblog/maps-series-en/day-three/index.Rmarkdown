@@ -15,7 +15,7 @@ Day3's category is: **Polygons**. If you don't know what a *Polygon* is, [I didn
 
 To be pretty honest, I couldn't think of a linguistic-based topic to plot this map. However, bearing in mind that yesterday I plotted world's rivers, maybe this is a bit more linguistic-related. I ran out of ideas, ***so why not plot the top-ten Brazilian states in which my name seems to be the most frequent by a rate of 100.000 people?***
 
-I got the data from [IBGE (Brazilian Institute of Geography and Statistics)](https://censo2010.ibge.gov.br/nomes/#/search/response/187). Check out your name too! 😃
+I got the data from [IBGE (Brazilian Institute of Geography and Statistics)](https://censo2010.ibge.gov.br/nomes/#/search/response/187). Check out your name too!! 😃
 
 <center>
 
