@@ -1,0 +1,211 @@
+---
+title: "#1: Array methods"
+weight: 3
+subtitle: "#1: Notes on Array methods"
+excerpt: "#1: Notes on Array methods"
+date: 2023-04-29
+draft: false
+---
+
+*Shall we start with notes on Array methods?*
+
+Ps: Notes based on Jonas Schmedtmann’s course on Udemy -- **No credits intended**
+
+
+
+
+## #1: .slice()
+
+1. **Aim:** Extract parts of an array
+2. **Mutates the array?** No. 
+3. **Input:** an array
+4. **Returns:** Returns a copy of a section of an array
+
+
+```javascript
+
+ // Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+
+/// Slice 
+
+// Parameters:
+  
+  // 1. start: The beginning index of the specified portion of the array. If start is undefined, then the slice //  // begins at index 0.
+
+  // 2. The end index of the specified portion of the array. This is exclusive of the element at the index 'end'. // If end is undefined, then the slice extends to the end of the array. (not included in the output)
+
+// In use:
+
+console.log(countries.slice(3))  // ['Italy', 'Colombia', 'Argentina']
+console.log(countries.slice(3,5)) // returns ['Italy', 'Colombia'] (Argentina not included)
+console.log(countries.slice(-1)) // returns ['Argentina']
+console.log(countries.slice(-5)) // returns ['Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+console.log(countries.slice(-5, -4)) // returns ['Denmark']
+
+
+// Creating a shallow copy of the array: 
+
+console.log(countries.slice()); // Call with no arguments
+console.log([...countries]); // With spread operator
+```
+
+```
+## [ 'Italy', 'Colombia', 'Argentina' ]
+## [ 'Italy', 'Colombia' ]
+## [ 'Argentina' ]
+## [ 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina' ]
+## [ 'Denmark' ]
+## [ 'Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina' ]
+## [ 'Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina' ]
+```
+
+
+## #2: .splice()
+
+1. **Aim:** Change the original array and delete the extracted elements. If necessary, inserts new elements in their place, returning the deleted elements.
+2. **Mutates the array?** Yes! 
+3. **Input:** an array
+4. **Returns:** An array containing the elements that were deleted.
+
+
+```javascript
+
+// Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+
+/// Splice:
+
+// Parameters:
+  
+  // 1. Start: The zero-based location in the array from which to start removing elements.
+  // 2. End: The number of elements to remove.
+
+// In Use:  
+  
+console.log(countries.splice(1)); // ['Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+console.log(countries.splice(-4)); // ['Brazil']
+console.log(countries.splice(5)); // Returns []
+console.log(countries.splice(3, 4)); // Returns []
+```
+
+```
+## [ 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina' ]
+## [ 'Brazil' ]
+## []
+## []
+```
+
+## #3: .reverse()
+
+1. **Aim:** Reverses the elements in an array in place.
+2. **Mutates the array?** Yes!
+3. **Input:** an array
+4. **Returns:**  Returns a reference to the same array.
+
+
+
+```javascript
+// Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+
+/// Reverse:
+
+  // Can be used without arguments
+
+// In Use:
+
+console.log(countries.reverse()); // ['Argentina', 'Colombia', 'Italy', 'USA', 'Denmark', 'Brazil']
+console.log(countriesSpelled.reverse()); // ['l', 'i', 'z', 'a', 'r', 'B']
+```
+
+```
+## [ 'Argentina', 'Colombia', 'Italy', 'USA', 'Denmark', 'Brazil' ]
+## [ 'l', 'i', 'z', 'a', 'r', 'B' ]
+```
+
+## #4: .concat()
+
+1. **Aim:** Combines two or more arrays
+2. **Mutates the array?** No!
+3. **Input:** an array
+4. **Returns:** Returns a new array without modifying any existing arrays.
+
+
+```javascript
+// Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+
+/// Concat:
+
+  // 1. items: Additional arrays and/or items to add to the end of the array.
+
+// In Use:
+
+console.log(countries.concat(countriesSpelled)); // ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina', 'B', 'r', 'a', 'z', 'i', 'l']
+
+// Using spreed: 
+
+console.log([...countries, ...countriesSpelled]); // ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina', 'B', 'r', 'a', 'z', 'i', 'l']
+```
+
+```
+## [
+##   'Brazil',   'Denmark',
+##   'USA',      'Italy',
+##   'Colombia', 'Argentina',
+##   'B',        'r',
+##   'a',        'z',
+##   'i',        'l'
+## ]
+## [
+##   'Brazil',   'Denmark',
+##   'USA',      'Italy',
+##   'Colombia', 'Argentina',
+##   'B',        'r',
+##   'a',        'z',
+##   'i',        'l'
+## ]
+```
+
+## #5: .join()
+
+1. **Aim:** Adds all the elements of an array into a string, separated by the specified separator string.
+2. **Mutates the array?** No!
+3. **Input:** a string
+4. **Returns:** Returns a new array 
+
+
+```javascript
+// Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+
+/// Join:
+
+  // 1. separator: A string used to separate one element of the array from the next in the resulting string. If omitted, the array elements are separated with a comma.
+
+// In Use:
+
+console.log(countries.join()); // Brazil,Denmark,USA,Italy,Colombia,Argentina
+console.log(countries.join('-')); // Brazil-Denmark-USA-Italy-Colombia-Argentina
+console.log(countries.join(' and ')); // Brazil and Denmark and USA and Italy and Colombia and Argentina
+```
+
+```
+## Brazil,Denmark,USA,Italy,Colombia,Argentina
+## Brazil-Denmark-USA-Italy-Colombia-Argentina
+## Brazil and Denmark and USA and Italy and Colombia and Argentina
+```
+
+&#128021; Au-au! Our array's methods *cheatsheet* is getting pretty cool! 
+
