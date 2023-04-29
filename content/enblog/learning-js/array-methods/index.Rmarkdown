@@ -1,0 +1,19 @@
+---
+title: "Array methods (notes)"
+weight: 3
+subtitle: "Notes on Array methods"
+excerpt: "Notes on Array methods"
+date: 2023-04-29
+draft: false
+---
+
+Let's start with array methods! 😃
+
+## Day2: lines
+
+# Following a SO's post
+
+
+🐕 Au-au! Today we've made our second map using `ggplot2` in order to complete the *#30DayMapChallenge*. We've found an useful SO post and followed some of its ideas. Today's category was lines, so we've plotted a map to indicate rivers locations around the world. The plot is very simple, but it's a start, right? *Should we say: mission accomplished?!* See you soon!
+
+[1]: https://github.com/Larissa-Cury/blogScripts.git
