@@ -24,7 +24,7 @@ library(knitr)
 3. **Input:** an array
 4. **Returns:** Returns a copy of a section of an array
 
-```{node}
+```{js}
 
  // Create arrays: 
 
@@ -62,7 +62,7 @@ console.log([...countries]); // With spread operator
 3. **Input:** an array
 4. **Returns:** An array containing the elements that were deleted.
 
-```{node}
+```{js}
 
 // Create arrays: 
 
@@ -92,7 +92,7 @@ console.log(countries.splice(3, 4)); // Returns []
 4. **Returns:**  Returns a reference to the same array.
 
 
-```{node}
+```{js}
 // Create arrays: 
 
 const countriesSpelled = ['B','r','a','z','i','l']
@@ -115,7 +115,7 @@ console.log(countriesSpelled.reverse()); // ['l', 'i', 'z', 'a', 'r', 'B']
 3. **Input:** an array
 4. **Returns:** Returns a new array without modifying any existing arrays.
 
-```{node}
+```{js}
 // Create arrays: 
 
 const countriesSpelled = ['B','r','a','z','i','l']
@@ -138,16 +138,16 @@ console.log([...countries, ...countriesSpelled]); // ['Brazil', 'Denmark', 'USA'
 
 1. **Aim:** Adds all the elements of an array into a string, separated by the specified separator string.
 2. **Mutates the array?** No!
-3. **Input:** a string
-4. **Returns:** Returns a new array 
+3. **Input:** an array
+4. **Returns:** Returns a new string 
 
-```{node}
+```{js}
 // Create arrays: 
 
 const countriesSpelled = ['B','r','a','z','i','l']
 const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
 
-/// Join:
+/// At:
 
   // 1. separator: A string used to separate one element of the array from the next in the resulting string. If omitted, the array elements are separated with a comma.
 
@@ -157,6 +157,480 @@ console.log(countries.join()); // Brazil,Denmark,USA,Italy,Colombia,Argentina
 console.log(countries.join('-')); // Brazil-Denmark-USA-Italy-Colombia-Argentina
 console.log(countries.join(' and ')); // Brazil and Denmark and USA and Italy and Colombia and Argentina
 ```
+
+## #6: .at()
+
+1. **Aim:** Takes values out of the array
+2. **Mutates the array?** No!
+3. **Input:** an array
+4. **Returns:** Returns a new string with the extracted values
+
+```{js}
+// Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+
+/// Join:
+
+  // 1. the index
+
+// In Use:
+
+console.log(countries.at(0)); // Brazil
+console.log(countries.at(1)); // Denmark
+console.log(countries.at(-1)); // Argentina
+console.log(countries.at(-2)); // Colombia
+console.log(typeof countries.at(-2)); // STRING!
+```
+
+## #7: .forEach()
+
+1. **Aim:** Performs the specified action for each element in an array (it loops over the arr)
+2. **Mutates the array?** No!
+3. **Input:** an array
+4. **Returns:** It returns undefined 
+
+// Note: You CANNOT *break* a for each loop! It will *ALWAYS* loop over the *ENTIRE* array and there's nothing you can do about it!
+// Note 2: Use when we want a *new* array with the *same* length as the original. We just want to take sth out of the original array and put it in the new array
+
+```{js}
+// Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+
+/// Join:
+
+  // 1. callbackfn — A function that accepts up to three arguments. forEach calls the callbackfn function one time      //   for each element in the array:
+  
+ // country - current element
+ // i - current index
+ // arr - the entire array that we are looping over
+
+  // 2. thisArg — An object to which the this keyword can refer in the callbackfn function. If thisArg is              //   omitted, undefined is used as the this value.
+
+// In Use:
+  
+// A)
+countries.forEach((country, i, arr) => console.log(country, i, arr));
+
+// returns:
+  
+<!-- Denmark 1 (6) ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']0: "Brazil"1: "Denmark"2: "USA"3: "Italy"4: "Colombia"5: "Argentina"length: 6[[Prototype]]: Array(0) -->
+<!-- USA 2 (6) ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina'] -->
+<!-- Italy 3 (6) ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina'] -->
+<!-- Colombia 4 (6) ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina'] -->
+<!-- Argentina 5 (6) ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina'] -->
+
+// B)
+
+countries.forEach((country, i, arr) =>
+  console.log(`${country} is the ${i}º element of the array`)
+);
+
+// returns
+
+<!-- Brazil is the 0º element of the array -->
+<!-- Denmark is the 1º element of the array -->
+<!-- USA is the 2º element of the array -->
+<!-- Italy is the 3º element of the array -->
+<!-- Colombia is the 4º element of the array -->
+<!-- Argentina is the 5º element of the array -->
+
+```
+
+## #8: .map()
+
+1. **Aim:** The map method calls the callbackfn function one time for each element in the array.
+2. **Mutates the array?** No!
+3. **Input:** an array
+4. **Returns:**  Returns a brand new array which contains in each position the result of the callback function
+
+
+```{js}
+// Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
+
+/// Map:
+
+  // 1. callbackfn — A function that accepts up to three arguments. 
+  
+   // country - current element
+  // i - current index
+  // arr - the entire array that we are looping over
+  
+  // 2. thisArg — An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
+
+// In Use:
+
+const toBilion = 1000;
+
+const countriesBigPop = countriesPOP.map(
+  (country, i, arr) => country / toBilion
+);
+
+// milion to bilion: 
+
+console.log(countriesBigPop);
+
+// returns: [0.21430000000000002, 0.005857, 0.3319, 0.05911, 0.05152, 0.045810000000000003]
+```
+
+## #9: .filter()
+
+1. **Aim:** The map method calls the callbackfn function one time for each element in the array.
+2. **Mutates the array?** No!
+3. **Input:** an array
+4. **Returns:**  Returns an array containing the elements of the original array that met the condition specified in a callback function.
+
+
+```{js}
+// Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
+
+/// Map:
+
+  // 1. predicate — A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array. 
+  
+   // country - current element
+  // i - current index
+ // arr - the entire array that we are looping over
+  
+  // 2. thisArg — An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
+
+// In Use:
+
+const veryBigPopulation = countriesPOP.filter(
+  (country, i, arr) => country > 200
+);
+console.log(veryBigPopulation); // returns: [214.3, 331.9]
+```
+
+
+## #10: .reduce()
+
+1. **Aim:** Calls the specified callback function for all the elements in an array. 
+2. **Mutates the array?** No!
+3. **Input:** an array
+4. **Returns:**  The return value of the callback function is the *accumulated result*, and is provided as an argument in the next call to the callback function.
+
+
+```{js}
+// Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
+
+/// Reduce:
+
+  // 1. callbackfn — A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
+
+  // 1. Accumulator
+  // 2. country - current element
+  // 3. i - current index
+ // 4. arr - the entire array that we are looping over
+  
+  // 2. initialValue — If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
+
+// In Use:
+
+
+// acc = keep track of the current sum!
+
+const countriesSUM = countriesPOP.reduce(
+  (acc, country, i, arr) => acc + country,
+  0
+);
+
+console.log(countriesSUM); // 708.4970000000001
+console.log(typeof countriesSUM); // number
+
+const countriesSUM = countriesPOP.reduce(
+  (acc, country, i, arr) => acc + country,
+  -100
+);
+
+console.log(countriesSUM); // 608.4970000000001
+
+// acc = Keep track of the current maximum value!
+
+const max = countriesPOP.reduce((acc, country) => {
+  if (acc > country) {
+    return acc;
+  } else {
+    return country;
+  }
+}, countriesPOP[0]);
+
+console.log(max); // 331.9
+```
+
+
+## #11: .find()
+
+1. **Aim:** Retrieve *an element* from an array based on a condition 
+2. **Mutates the array?** No!
+3. **Input:** an array
+4. **Returns:**  Returns *the value* of the first *element* in the array where predicate is true, and undefined otherwise.
+
+// Note: ```.find()```  x ```.filter()``` <br>
+
+// 1. ```.filter()``` returns ALL the elements that match a condition, while ```.find()``` only returns the FIRST one <br>
+// 2. Filter returns a NEW ARRAY that match a condition, while ```.find()``` only returns the element itself and not a condition <br>
+// 3. When condition is T, ```.find()``` returns the first element that satisfies it <br>
+
+
+```{js}
+// Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
+
+/// Reduce:
+
+  // 1. predicate - find calls predicate once for each element of the array, in ascending order, until it finds one where predicate returns true. If such an element is found, find immediately returns that element value. Otherwise, find returns undefined.
+
+  //  1. country - current element
+  //  2. i - current index
+ //  3. arr - the entire array that we are looping over
+  
+  // 2. @param thisArg - If provided, it will be used as the this value for each invocation of predicate. If it is not provided, undefined is used instead.
+
+// In Use:
+
+const firstSmallCountry = countriesPOP.find(country => country < 100);
+console.log(firstSmallCountry); // 5.857
+
+// FIND OBJECT IN AN ARRAY BASED ON SOME PROPERTY OF THAT OBJECT 
+
+const country1 = {
+  name: 'Brazil',
+  population: 214.3,
+  code: 'BRA',
+  cities: ['Rio', 'São Paulo', 'Porto Alegre', 'Belo Horizonte'],
+};
+
+const country2 = {
+  name: 'Denmark',
+  population: 5.857,
+  code: 'DK',
+  cities: ['Copenhagen', 'Aalborg', 'Randers', 'Aarhus'],
+};
+
+const country3 = {
+  name: 'United States of America',
+  population: 331.9,
+  code: 'USA',
+  cities: ['Denver', 'Dallas', 'NYC', 'Ohio'],
+};
+
+const country4 = {
+  name: 'Italy',
+  population: 59.11,
+  code: 'IT',
+  cities: ['Rome', 'Cecina', 'Firenze', 'Veneza'],
+};
+
+const countriesObjs = [country1, country2, country3, country4];
+
+console.log(countriesPOP);
+console.log(countriesObjs);
+
+// Finding 'Italy' OBJECT: 
+
+const getIT = countriesObjs.find(country => country.code === 'IT');
+console.log(getIT);
+
+// returns Italy's object:
+
+<!-- {name: 'Italy', population: 59.11, code: 'IT', cities: Array(4)} -->
+<!-- cities: (4) ['Rome', 'Cecina', 'Firenze', 'Veneza'] -->
+<!-- code: "IT" -->
+<!-- name: "Italy" -->
+<!-- population: 59.11 -->
+<!-- [[Prototype]]: Object -->
+```
+
+
+## #12: .findIndex()
+
+1. **Aim:** Retrieve *an index* of an element in an array 
+2. **Mutates the array?** No!
+3. **Input:** an array
+4. **Returns:**  Returns the *index* of the first element in the array where predicate is true, and -1 otherwise.
+
+
+```{js}
+// Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
+
+/// Reduce:
+
+  // 1. predicate - find calls predicate once for each element of the array, in ascending order, until it finds one where predicate returns true. If such an element is found, findIndex immediately returns that element index. Otherwise, findIndex returns -1.
+
+// 2. @param thisArg - If provided, it will be used as the this value for each invocation of predicate. If it is not provided, undefined is used instead.
+
+
+// In Use:
+
+// FIND INDEX OF OBJECT IN AN ARRAY OF OBJECTS:
+
+const country1 = {
+  name: 'Brazil',
+  population: 214.3,
+  code: 'BRA',
+  cities: ['Rio', 'São Paulo', 'Porto Alegre', 'Belo Horizonte'],
+};
+
+const country2 = {
+  name: 'Denmark',
+  population: 5.857,
+  code: 'DK',
+  cities: ['Copenhagen', 'Aalborg', 'Randers', 'Aarhus'],
+};
+
+const country3 = {
+  name: 'United States of America',
+  population: 331.9,
+  code: 'USA',
+  cities: ['Denver', 'Dallas', 'NYC', 'Ohio'],
+};
+
+const country4 = {
+  name: 'Italy',
+  population: 59.11,
+  code: 'IT',
+  cities: ['Rome', 'Cecina', 'Firenze', 'Veneza'],
+};
+
+const countriesObjs = [country1, country2, country3, country4];
+
+// Returns: 
+
+const getIt = countriesObjs.findIndex(country => country.code === 'IT');
+console.log(getIt); // returns 3
+const getBR = countriesObjs.findIndex(country => country.code === 'BRA');
+console.log(getBR); // returns 0
+const getDK = countriesObjs.findIndex(country => country.code === 'DK');
+console.log(getDK); // returns 1
+
+// TO DELETE AN ELEMENT FROM AN ARRAY, WE NEED THE SPLICE METHOD. HOWEVER, TO USE IT, WE NEED THE INDEX OF THE ELEMENT THAT WE WANT TO DELETE
+
+// Exclude Italy:
+console.log(countriesObjs); // ALL 4 COUNTRIES
+countriesObjs.splice(getIt, 1);
+console.log(countriesObjs); // ONLY BRA, DK AND USA
+
+// On the whole array:
+console.log(countriesObjs.splice(countriesObjs, 1)); // BRA
+console.log(countriesObjs.splice(countriesObjs, 2)); // DK and USA
+```
+
+## #13: .includes()
+
+1. **Aim:** Determines whether an array includes a certain element
+2. **Mutates the array?** No!
+3. **Input:** an array
+4. **Returns:**  Returns a BOOLEAN as approppriate (returns T if ANY value in the array is EXACTLY equal to x)
+
+```{js}
+// Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
+
+/// Includes:
+
+// 1. searchElement — The element to search for.
+
+// 2. fromIndex — The position in this array at which to begin
+
+// In Use:
+
+// Note: only exact same word (ex: Bra doesn't work)
+console.log(countries.includes('Brazil')); // T
+console.log(countries.includes('India')); // F
+```
+
+## #14: .some()
+
+1. **Aim:** Determines whether the specified callback function returns true for ANY element of an array.
+2. **Mutates the array?** No!
+3. **Input:** an array
+4. **Returns:**  Returns a BOOLEAN as approppriate (returns T if ANY value in the array meets the condition)
+
+```{js}
+// Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
+
+/// Some:
+
+// 1. predicate - A function that accepts up to three arguments. The some method calls the predicate function for each element in the array until the predicate returns a value which is coercible to the Boolean value true, or until the end of the array.
+
+// 2. thisArg - An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
+
+// In Use:
+
+console.log(countriesPOP); // [214.3, 5.857, 331.9, 59.11, 51.52, 45.81]
+
+// 2 values : T
+
+const isBig = countriesPOP.some(pop => pop > 200);
+console.log(isBig); // RETURNS T 
+// 1 value: T
+
+const isBig = countriesPOP.some(pop => pop > 300);
+console.log(isBig); // RETURNS T
+
+// No value T:
+const isBig = countriesPOP.some(pop => pop > 3000);
+console.log(isBig); // RETURNS F
+```
+
+## #15: .every()
+
+1. **Aim:** Determines whether ALL the members of an array satisfy the specified test.
+2. **Mutates the array?** No!
+3. **Input:** an array
+4. **Returns:**  Returns a BOOLEAN as approppriate (returns T if ALL values in the array meet the condition)
+
+```{js}
+// Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
+
+/// Some:
+
+// 1. predicate - A function that accepts up to three arguments. The every method calls the predicate function for each element in the array until the predicate returns a value which is coercible to the Boolean value false, or until the end of the array.
+
+// 2. thisArg - An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
+
+// In Use:
+
+const isBig = countriesPOP.every(pop => pop > 300);
+console.log(isBig); // RETURNS F
+const isBig2 = countriesPOP.every(pop => pop < 5000);
+console.log(isBig2); // RETURNS T
+```
+
 
 &#128021; Au-au! Our array's methods *cheatsheet* is getting pretty cool! 
 
