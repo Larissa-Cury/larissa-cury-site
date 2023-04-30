@@ -14,6 +14,12 @@ Ps: Notes based on Jonas Schmedtmann’s course on Udemy -- **No credits intende
 
 
 
+## # Cool available cheatsheets: 
+
+### by Rahul Sharma
+
+Click [here][1]
+
 ## #1: .slice()
 
 1. **Aim:** Extract parts of an array
@@ -283,7 +289,7 @@ console.log(countries.join(' and ')); // Brazil and Denmark and USA and Italy an
 const countriesSpelled = ['B','r','a','z','i','l']
 const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
 
-/// Join:
+/// AT:
 
   // 1. the index
 
@@ -303,7 +309,7 @@ console.log(typeof countries.at(-2)); // STRING!
 const countriesSpelled = ['B','r','a','z','i','l']
 const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
 
-/// Join:
+/// AT:
 
   // 1. the index
 
@@ -333,7 +339,7 @@ console.log(typeof countries.at(-2)); // STRING!
 const countriesSpelled = ['B','r','a','z','i','l']
 const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
 
-/// Join:
+/// For each:
 
   // 1. callbackfn — A function that accepts up to three arguments. forEach calls the callbackfn function one time      //   for each element in the array:
   
@@ -380,7 +386,7 @@ countries.forEach((country, i, arr) =>
 const countriesSpelled = ['B','r','a','z','i','l']
 const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
 
-/// Join:
+/// For each:
 
   // 1. callbackfn — A function that accepts up to three arguments. forEach calls the callbackfn function one time      //   for each element in the array:
   
@@ -690,7 +696,7 @@ const countriesSpelled = ['B','r','a','z','i','l']
 const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
 const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
 
-/// Reduce:
+/// Find:
 
   // 1. predicate - find calls predicate once for each element of the array, in ascending order, until it finds one where predicate returns true. If such an element is found, find immediately returns that element value. Otherwise, find returns undefined.
 
@@ -763,7 +769,7 @@ const countriesSpelled = ['B','r','a','z','i','l']
 const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
 const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
 
-/// Reduce:
+/// Find:
 
   // 1. predicate - find calls predicate once for each element of the array, in ascending order, until it finds one where predicate returns true. If such an element is found, find immediately returns that element value. Otherwise, find returns undefined.
 
@@ -845,7 +851,7 @@ const countriesSpelled = ['B','r','a','z','i','l']
 const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
 const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
 
-/// Reduce:
+/// FindIndex:
 
   // 1. predicate - find calls predicate once for each element of the array, in ascending order, until it finds one where predicate returns true. If such an element is found, findIndex immediately returns that element index. Otherwise, findIndex returns -1.
 
@@ -915,7 +921,7 @@ const countriesSpelled = ['B','r','a','z','i','l']
 const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
 const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
 
-/// Reduce:
+/// FindIndex:
 
   // 1. predicate - find calls predicate once for each element of the array, in ascending order, until it finds one where predicate returns true. If such an element is found, findIndex immediately returns that element index. Otherwise, findIndex returns -1.
 
@@ -1112,7 +1118,7 @@ const countriesSpelled = ['B','r','a','z','i','l']
 const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
 const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
 
-/// Some:
+/// Every:
 
 // 1. predicate - A function that accepts up to three arguments. The every method calls the predicate function for each element in the array until the predicate returns a value which is coercible to the Boolean value false, or until the end of the array.
 
@@ -1134,7 +1140,7 @@ const countriesSpelled = ['B','r','a','z','i','l']
 const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
 const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
 
-/// Some:
+/// Every:
 
 // 1. predicate - A function that accepts up to three arguments. The every method calls the predicate function for each element in the array until the predicate returns a value which is coercible to the Boolean value false, or until the end of the array.
 
@@ -1467,7 +1473,7 @@ const countriesSpelled = ['B','r','a','z','i','l']
 const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
 const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
 
-/// Some:
+/// Sort:
 
 // 1. compareFn - Function used to determine the order of the elements. It is expected to return a negative value if the first argument is less than the second argument, zero if they're equal, and a positive value otherwise. If omitted, the elements are sorted in ascending, ASCII character order.
 
@@ -1504,7 +1510,7 @@ const countriesSpelled = ['B','r','a','z','i','l']
 const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
 const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
 
-/// Some:
+/// Sort:
 
 // 1. compareFn - Function used to determine the order of the elements. It is expected to return a negative value if the first argument is less than the second argument, zero if they're equal, and a positive value otherwise. If omitted, the elements are sorted in ascending, ASCII character order.
 
@@ -1533,5 +1539,419 @@ const sortedPop3 = countriesPOP.sort((a, b) => b - a); // [331.9, 214.3, 59.11, 
 console.log(sortedPop3);
 </script>
 
+## #19: .fill()
+
+1. **Aim:** Changes all array elements from start to end index to a static value 
+2. **Mutates the array?** Yes!
+3. **Input:** an array
+4. **Returns:** Returns the modified array
+
+
+```js
+// Create arrays:
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
+
+/// Fill:
+
+// 1. value — value to fill array section with
+
+// 2. start - index to start filling the array at. If start is negative, it is treated as length+start where length is the length of the array.
+
+// 3. end - index to stop filling the array at. If end is negative, it is treated as length+end.
+
+// In Use:
+
+// A) Change Spelled Countries' array:
+
+console.log(countriesSpelled);
+// ['B', 'r', 'a', 'z', 'i', 'l']
+
+// countriesSpelled.fill('Hey');
+
+console.log(countriesSpelled); // ['Hey', 'Hey', 'Hey', 'Hey', 'Hey', 'Hey]
+
+// Specify positions:
+
+//countriesSpelled.fill('Hey', 2);
+
+// Starts at 2:
+// ['B', 'r', 'Hey', 'Hey', 'Hey', 'Hey']
+
+countriesSpelled.fill('Hey', 2, 4);
+
+// Starts at 3, ends at 4:
+// ['B', 'r', 'Hey', 'Hey', 'i', 'l']
+
+console.log(countriesSpelled);
+
+// Negative:
+
+// countriesSpelled.fill('Hey', -1);
+
+// ['B', 'r', 'a', 'z', 'i', 'Hey']
+
+//countriesSpelled.fill('Hey', -2, -3);
+// the same
+
+//countriesSpelled.fill('Hey', -1, 2);
+
+// the same
+
+console.log(countriesSpelled);
+
+// B) Fill an array with 'Hey!'
+
+const arr = [1, 2, 3, 4, 5];
+
+arr.fill('Hey');
+
+console.log(arr); // ['Hey', 'Hey', 'Hey', 'Hey', 'Hey']
+
+// Specify positions:
+
+//arr.fill('Hey', 2); // Starts at 2: [1, 2, 'Hey', 'Hey', 'Hey']
+arr.fill('Hey', 2, 4); // Starts at 3, ends at 4: [1, 2, 'Hey', 'Hey', 5]
+
+console.log(arr);
+
+// C) EMPTY ARRAY + FILL
+
+// New arr:
+const a = new Array(7);
+console.log(a); // [empty × 7]
+// Filling it:
+a.fill('Hey');
+console.log(a);
+// ['Hey', 'Hey', 'Hey', 'Hey', 'Hey', 'Hey', 'Hey']
+```
+
+
+<script type="text/javascript">
+// Create arrays:
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
+
+/// Fill:
+
+// 1. value — value to fill array section with
+
+// 2. start - index to start filling the array at. If start is negative, it is treated as length+start where length is the length of the array.
+
+// 3. end - index to stop filling the array at. If end is negative, it is treated as length+end.
+
+// In Use:
+
+// A) Change Spelled Countries' array:
+
+console.log(countriesSpelled);
+// ['B', 'r', 'a', 'z', 'i', 'l']
+
+// countriesSpelled.fill('Hey');
+
+console.log(countriesSpelled); // ['Hey', 'Hey', 'Hey', 'Hey', 'Hey', 'Hey]
+
+// Specify positions:
+
+//countriesSpelled.fill('Hey', 2);
+
+// Starts at 2:
+// ['B', 'r', 'Hey', 'Hey', 'Hey', 'Hey']
+
+countriesSpelled.fill('Hey', 2, 4);
+
+// Starts at 3, ends at 4:
+// ['B', 'r', 'Hey', 'Hey', 'i', 'l']
+
+console.log(countriesSpelled);
+
+// Negative:
+
+// countriesSpelled.fill('Hey', -1);
+
+// ['B', 'r', 'a', 'z', 'i', 'Hey']
+
+//countriesSpelled.fill('Hey', -2, -3);
+// the same
+
+//countriesSpelled.fill('Hey', -1, 2);
+
+// the same
+
+console.log(countriesSpelled);
+
+// B) Fill an array with 'Hey!'
+
+const arr = [1, 2, 3, 4, 5];
+
+arr.fill('Hey');
+
+console.log(arr); // ['Hey', 'Hey', 'Hey', 'Hey', 'Hey']
+
+// Specify positions:
+
+//arr.fill('Hey', 2); // Starts at 2: [1, 2, 'Hey', 'Hey', 'Hey']
+arr.fill('Hey', 2, 4); // Starts at 3, ends at 4: [1, 2, 'Hey', 'Hey', 5]
+
+console.log(arr);
+
+// C) EMPTY ARRAY + FILL
+
+// New arr:
+const a = new Array(7);
+console.log(a); // [empty × 7]
+// Filling it:
+a.fill('Hey');
+console.log(a);
+// ['Hey', 'Hey', 'Hey', 'Hey', 'Hey', 'Hey', 'Hey']
+</script>
+
+## #20: .Array.from()
+
+1. **Aim:** Creates an array from an iterable object.
+2. **Mutates the array?** Yes!
+3. **Input:** an array
+4. **Returns:** Returns the modified array <br>
+
+Note: It is as if we're calling the map function on the empty array
+
+
+```js
+<!-- // Create arrays:  -->
+
+<!-- const countriesSpelled = ['B','r','a','z','i','l'] -->
+<!-- const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina'] -->
+<!-- const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people -->
+
+<!-- /// Array.from(): -->
+
+<!-- // 1. iterable — An iterable object to convert to an array. -->
+
+<!-- // 1. length -->
+
+<!-- // 2.  mapfn — A mapping function to call on every element of the array. -->
+
+<!-- // 2.1: current element -->
+<!-- // 2.1: index -->
+<!-- // 2.1: the entire array -->
+
+<!-- // 3.  thisArg — Value of 'this' used to invoke the mapfn. -->
+
+<!-- // Note: _ throwaway variable (we don't need the _ value at all , but we still need to define it 'cuz we need the 2º parameter - the index) -->
+
+<!-- // const z = Array.from({ length: 5 }, (_, i) => i + 1);  -->
+
+<!-- // console.log(z) // [1, 2, 3, 4, 5] -->
+
+<!-- // In Use: -->
+
+<!-- // A) Change Spelled Countries' array: -->
+
+<!-- console.log(countriesSpelled);  -->
+<!-- // ['B', 'r', 'a', 'z', 'i', 'l'] -->
+
+<!-- // countriesSpelled.fill('Hey'); -->
+
+<!-- console.log(countriesSpelled); // ['Hey', 'Hey', 'Hey', 'Hey', 'Hey', 'Hey] -->
+
+<!-- // Specify positions: -->
+
+<!-- //countriesSpelled.fill('Hey', 2); -->
+
+<!-- // Starts at 2: -->
+<!-- // ['B', 'r', 'Hey', 'Hey', 'Hey', 'Hey'] -->
+
+<!-- countriesSpelled.fill('Hey', 2, 4);  -->
+
+<!-- // Starts at 3, ends at 4: -->
+<!-- // ['B', 'r', 'Hey', 'Hey', 'i', 'l'] -->
+
+<!-- console.log(countriesSpelled); -->
+
+<!-- // Negative: -->
+
+<!-- // countriesSpelled.fill('Hey', -1);  -->
+
+<!-- // ['B', 'r', 'a', 'z', 'i', 'Hey'] -->
+
+<!-- //countriesSpelled.fill('Hey', -2, -3); -->
+<!-- // the same -->
+
+<!-- //countriesSpelled.fill('Hey', -1, 2); -->
+
+<!-- // the same -->
+
+<!-- console.log(countriesSpelled); -->
+
+<!-- // B) Fill an array with 'Hey!' -->
+
+<!-- const arr = [1, 2, 3, 4, 5]; -->
+
+<!-- arr.fill('Hey'); -->
+
+<!-- console.log(arr); // ['Hey', 'Hey', 'Hey', 'Hey', 'Hey'] -->
+
+<!-- // Specify positions: -->
+
+<!-- //arr.fill('Hey', 2); // Starts at 2: [1, 2, 'Hey', 'Hey', 'Hey'] -->
+<!-- arr.fill('Hey', 2, 4); // Starts at 3, ends at 4: [1, 2, 'Hey', 'Hey', 5] -->
+
+<!-- console.log(arr); -->
+```
+
+
+<script type="text/javascript">
+<!-- // Create arrays:  -->
+
+<!-- const countriesSpelled = ['B','r','a','z','i','l'] -->
+<!-- const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina'] -->
+<!-- const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people -->
+
+<!-- /// Array.from(): -->
+
+<!-- // 1. iterable — An iterable object to convert to an array. -->
+
+<!-- // 1. length -->
+
+<!-- // 2.  mapfn — A mapping function to call on every element of the array. -->
+
+<!-- // 2.1: current element -->
+<!-- // 2.1: index -->
+<!-- // 2.1: the entire array -->
+
+<!-- // 3.  thisArg — Value of 'this' used to invoke the mapfn. -->
+
+<!-- // Note: _ throwaway variable (we don't need the _ value at all , but we still need to define it 'cuz we need the 2º parameter - the index) -->
+
+<!-- // const z = Array.from({ length: 5 }, (_, i) => i + 1);  -->
+
+<!-- // console.log(z) // [1, 2, 3, 4, 5] -->
+
+<!-- // In Use: -->
+
+<!-- // A) Change Spelled Countries' array: -->
+
+<!-- console.log(countriesSpelled);  -->
+<!-- // ['B', 'r', 'a', 'z', 'i', 'l'] -->
+
+<!-- // countriesSpelled.fill('Hey'); -->
+
+<!-- console.log(countriesSpelled); // ['Hey', 'Hey', 'Hey', 'Hey', 'Hey', 'Hey] -->
+
+<!-- // Specify positions: -->
+
+<!-- //countriesSpelled.fill('Hey', 2); -->
+
+<!-- // Starts at 2: -->
+<!-- // ['B', 'r', 'Hey', 'Hey', 'Hey', 'Hey'] -->
+
+<!-- countriesSpelled.fill('Hey', 2, 4);  -->
+
+<!-- // Starts at 3, ends at 4: -->
+<!-- // ['B', 'r', 'Hey', 'Hey', 'i', 'l'] -->
+
+<!-- console.log(countriesSpelled); -->
+
+<!-- // Negative: -->
+
+<!-- // countriesSpelled.fill('Hey', -1);  -->
+
+<!-- // ['B', 'r', 'a', 'z', 'i', 'Hey'] -->
+
+<!-- //countriesSpelled.fill('Hey', -2, -3); -->
+<!-- // the same -->
+
+<!-- //countriesSpelled.fill('Hey', -1, 2); -->
+
+<!-- // the same -->
+
+<!-- console.log(countriesSpelled); -->
+
+<!-- // B) Fill an array with 'Hey!' -->
+
+<!-- const arr = [1, 2, 3, 4, 5]; -->
+
+<!-- arr.fill('Hey'); -->
+
+<!-- console.log(arr); // ['Hey', 'Hey', 'Hey', 'Hey', 'Hey'] -->
+
+<!-- // Specify positions: -->
+
+<!-- //arr.fill('Hey', 2); // Starts at 2: [1, 2, 'Hey', 'Hey', 'Hey'] -->
+<!-- arr.fill('Hey', 2, 4); // Starts at 3, ends at 4: [1, 2, 'Hey', 'Hey', 5] -->
+
+<!-- console.log(arr); -->
+</script>
+
+## #20: Array.from() + .querySelectorAll()
+
+>
+```Array.from()``` Creates arrays from array-like structures. (Iterables (maps, sets) can be converted into real arrays using ```Array.from()``` ) 'cuz it creates arrays FROM other things <br> <br>
+Another array-like structure is the result of writing ```.querySelectorAll()``` <br>
+It returns a node list, something like an array that contains all the selected elements, but it's not a real array (so it don't accept methods). If we actually wanted to use methods on the *node list*, we'd need first to convert the node list to an array
+> 
+
+Ex: Getting information from a form 
+
+
+```js
+
+<!-- labelofTheElement.addEventListener('click', function () { -->
+<!-- // Select all elements that have the same class: -->
+<!--   const fromUI = Array.from( -->
+<!--     document.querySelectorAll('.nameOfTheClassHere'), -->
+
+<!-- // Replace A by B -->
+<!--     el => Number(el.textContent.replace('A', 'B')) -->
+<!--   ); -->
+
+<!-- // log: -->
+<!--   console.log(fromUI); -->
+
+<!--   // Another way to conver to an array:  -->
+
+<!--   // BUT: We'd need to do the mapping separately -->
+
+<!--   // const fromUI2 = [...document.querySelectorAll('..nameOfTheClassHere')]; -->
+<!-- } -->
+```
+
+
+<script type="text/javascript">
+
+<!-- labelofTheElement.addEventListener('click', function () { -->
+<!-- // Select all elements that have the same class: -->
+<!--   const fromUI = Array.from( -->
+<!--     document.querySelectorAll('.nameOfTheClassHere'), -->
+
+<!-- // Replace A by B -->
+<!--     el => Number(el.textContent.replace('A', 'B')) -->
+<!--   ); -->
+
+<!-- // log: -->
+<!--   console.log(fromUI); -->
+
+<!--   // Another way to conver to an array:  -->
+
+<!--   // BUT: We'd need to do the mapping separately -->
+
+<!--   // const fromUI2 = [...document.querySelectorAll('..nameOfTheClassHere')]; -->
+<!-- } -->
+</script>
+
+So, we basically: 
+
+>
+ 1. We use ```Array.from``` to create an array with the result of ```document.querySelectorAll(.nameOfTheClassHere)``` <br>
+ 2. Which is a node list, but an array-like structure <br>
+ 3. We include a mapping function which transforms the initial array to an array exactly as we wanted (converted the raw elements to its text content and replace A by B) 
+>
+
 &#128021; Au-au! Our array's methods *cheatsheet* is getting pretty cool! 
+
+[1]:https://dev.to/devsmitra/28-javascript-array-hacks-a-cheat-sheet-for-developer-5769
 
