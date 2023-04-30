@@ -1,8 +1,8 @@
 ---
-title: "#2: Refactoring a callback function"
+title: "#3: Refactoring a callback function"
 weight: 3
-subtitle: "#2: Notes on Refactoring a callback function"
-excerpt: "#2: Notes on Refactoring a callback function"
+subtitle: "#3: Notes on Refactoring a callback function"
+excerpt: "#3: Notes on Refactoring a callback function"
 date: 2023-04-30
 draft: false
 ---

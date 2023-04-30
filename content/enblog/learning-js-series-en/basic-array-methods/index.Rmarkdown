@@ -1,0 +1,143 @@
+---
+title: "#1: Basic Array methods"
+weight: 3
+subtitle: "#1: Notes on Basic Array methods"
+excerpt: "#1: Notes on Basic Array methods"
+date: 2023-04-28
+draft: false
+---
+
+*Shall we start with notes on some Basic Array methods?*
+
+Ps: Notes based on Jonas Schmedtmann’s course on Udemy -- **No credits intended**
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+```
+
+## #1: .push()
+
+1. **Aim:** Appends new elements to the end of an array 
+2. **Mutates the array?** Yes!
+3. **Input:** an array
+4. **Returns:** Returns the new length of the array.
+
+```{js}
+// Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
+
+/// Push:
+
+// 1. items — New elements to add to the array.
+
+// In Use:
+
+console.log(countries); // ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+
+// Add countries to the END of countries' array:
+
+const moreCountries = countries.push('Sweeden', 'South Africa');
+
+console.log(moreCountries); // Returns the length of the array: 8
+
+console.log(countries); // ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina', 'Sweeden', 'South Africa']
+```
+
+## #2: .unshift()
+
+1. **Aim:** Inserts new elements at the start of an array
+2. **Mutates the array?** Yes!
+3. **Input:** an array
+4. **Returns:** Returns the new length of the array.
+
+```{js}
+// Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
+
+/// Unshift:
+
+// 1. items — Elements to insert at the start of the array.
+
+// In Use:
+
+console.log(countries); // ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+
+// Add countries to the BEGINNING of countries' array:
+
+const moreCountries = countries.unshift('Sweeden', 'South Africa');
+
+console.log(moreCountries); // Returns the length of the array: 8
+console.log(countries); // ['Sweeden', 'South Africa', 'Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+```
+
+## #3: .pop()
+
+1. **Aim:** Removes the last element from an array and returns it
+2. **Mutates the array?** Yes!
+3. **Input:** an array
+4. **Returns:** Returns the last elemenet of the array. If the array is empty, undefined is returned and the array is not modified.
+
+```{js}
+// Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
+
+/// Pop:
+
+// 1. No parameters needed.
+
+// In Use:
+
+// Remove the LAST country the of countries' array:
+
+console.log(countries); // ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+
+const fewerCountries = countries.pop();
+
+console.log(fewerCountries); // Argentina
+console.log(countries); // ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia']
+```
+
+## #4: .shift()
+
+1. **Aim:** Removes the first element from an array and returns it
+2. **Mutates the array?** Yes!
+3. **Input:** an array
+4. **Returns:** Returns the first elemenet of the array. If the array is empty, undefined is returned and the array is not modified.
+
+```{js}
+// Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
+
+/// Pop:
+
+// 1. No parameters needed.
+
+// In Use:
+
+// Remove the FIRST country the of countries' array:
+
+console.log(countries); // ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+
+const fewerCountries = countries.shift();
+
+console.log(fewerCountries); // Brazil
+console.log(countries); // ['Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+```
+
+
+&#128021; Au-au! Our array's methods *cheatsheet* is getting pretty cool! 
+

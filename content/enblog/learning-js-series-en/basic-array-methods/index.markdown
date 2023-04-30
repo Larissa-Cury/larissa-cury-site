@@ -1,9 +1,9 @@
 ---
-title: "#2: Array methods"
+title: "#1: Basic Array methods"
 weight: 3
-subtitle: "#2: Notes on Array methods"
-excerpt: "#2: Notes on Array methods"
-date: 2023-04-29
+subtitle: "#1: Notes on Basic Array methods"
+excerpt: "#1: Notes on Basic Array methods"
+date: 2023-04-28
 draft: false
 ---
 
