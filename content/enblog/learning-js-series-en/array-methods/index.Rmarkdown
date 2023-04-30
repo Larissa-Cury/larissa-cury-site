@@ -171,7 +171,7 @@ console.log(countries.join(' and ')); // Brazil and Denmark and USA and Italy an
 const countriesSpelled = ['B','r','a','z','i','l']
 const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
 
-/// Join:
+/// AT:
 
   // 1. the index
 
@@ -200,7 +200,7 @@ console.log(typeof countries.at(-2)); // STRING!
 const countriesSpelled = ['B','r','a','z','i','l']
 const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
 
-/// Join:
+/// For each:
 
   // 1. callbackfn — A function that accepts up to three arguments. forEach calls the callbackfn function one time      //   for each element in the array:
   
@@ -395,7 +395,7 @@ const countriesSpelled = ['B','r','a','z','i','l']
 const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
 const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
 
-/// Reduce:
+/// Find:
 
   // 1. predicate - find calls predicate once for each element of the array, in ascending order, until it finds one where predicate returns true. If such an element is found, find immediately returns that element value. Otherwise, find returns undefined.
 
@@ -476,7 +476,7 @@ const countriesSpelled = ['B','r','a','z','i','l']
 const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
 const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
 
-/// Reduce:
+/// FindIndex:
 
   // 1. predicate - find calls predicate once for each element of the array, in ascending order, until it finds one where predicate returns true. If such an element is found, findIndex immediately returns that element index. Otherwise, findIndex returns -1.
 
@@ -617,7 +617,7 @@ const countriesSpelled = ['B','r','a','z','i','l']
 const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
 const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
 
-/// Some:
+/// Every:
 
 // 1. predicate - A function that accepts up to three arguments. The every method calls the predicate function for each element in the array until the predicate returns a value which is coercible to the Boolean value false, or until the end of the array.
 
@@ -803,7 +803,7 @@ const countriesSpelled = ['B','r','a','z','i','l']
 const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
 const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
 
-/// Some:
+/// Sort:
 
 // 1. compareFn - Function used to determine the order of the elements. It is expected to return a negative value if the first argument is less than the second argument, zero if they're equal, and a positive value otherwise. If omitted, the elements are sorted in ascending, ASCII character order.
 

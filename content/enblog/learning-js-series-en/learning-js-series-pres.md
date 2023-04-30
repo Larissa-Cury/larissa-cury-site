@@ -3,7 +3,7 @@ title: "Why Js?"
 weight: 1
 subtitle: ""
 excerpt: "Learning Js (notes)"
-date: 2023-04-29
+date: 2023-04-28
 draft: false
 ---
 
