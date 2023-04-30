@@ -631,6 +631,206 @@ const isBig2 = countriesPOP.every(pop => pop < 5000);
 console.log(isBig2); // RETURNS T
 ```
 
+## #16: .flat()
+
+1. **Aim:** Obtain a shallow copy of the array containing the sub-array elements and its elements 
+2. **Mutates the array?** No!
+3. **Input:** an array
+4. **Returns:**  Returns a *new* array with all sub-array elements concatenated into it recursively up to the specified depth.
+
+```{js}
+// Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
+
+// Create Nested array of countries - 1 NESTED LEVEL:
+const countriesCodes = ['BRA', 'DK', 'USA', 'IT', 'COL', 'ARG'];
+const countriesNested = countries.map((country, i, arr) => [
+  country,
+  countriesCodes[i],
+]);
+
+console.log(countriesNested); 
+
+// output: 
+
+<!-- [["Brazil","BRA"],["Denmark","DK"],["USA","USA"],["Italy","IT"],["Colombia","COL"],[  "Argentina","ARG"]] -->
+
+// Create Nested array of countries - 2 NESTED LEVELS:
+const countriesCodes2 = ['BRA', 'DK', 'USA', 'IT', 'COL', 'ARG'];
+const countriesNested2 = countries.map((country, i, arr) => [
+  country,
+  [countriesCodes[i], countriesPOP[i]],
+]);
+console.log(countriesNested2);
+
+// output: 
+
+<!-- [["Brazil",["BRA",214.3]],["Denmark",[        "DK",5.857]],["USA",["USA",331.9]],["Italy",[ -->
+<!-- "IT",59.11]],["Colombia",["COL",51.52]],[       "Argentina",["ARG",45.81]]] -->
+
+/// Flat:
+
+// 1. depth — The maximum recursion depth
+
+// In Use:
+
+// Getting countries' names + code as elements in a new array
+
+console.log(countriesNested.flat()); //  ['Brazil', 'BRA', 'Denmark', 'DK', 'USA', 'USA', 'Italy', 'IT', 'Colombia', 'COL', 'Argentina', 'ARG']
+
+// Getting all elements in the same array:
+// Wrong Way // 
+
+console.log(countriesNested2.flat());
+
+// ['Brazil', Array(2), 'Denmark', Array(2), 'USA', Array(2), 'Italy', Array(2), 'Colombia', Array(2), 'Argentina', Array(2)]
+// 0:"Brazil"
+// 1:(2) ['BRA', 214.3]
+// 2:"Denmark"
+// 3:(2) ['DK', 5.857]
+// 4:"USA"
+// 5:(2) ['USA', 331.9]
+// 6:"Italy"
+// 7:(2) ['IT', 59.11]
+// 8:"Colombia"
+// 9:(2) ['COL', 51.52]
+// 10:"Argentina"
+// 11:(2) ['ARG', 45.81]
+// length:12
+// [[Prototype]]: Array(0)
+
+// Getting all elements in the same array:
+// Right Way // 
+
+console.log(countriesNested2.flat(2));
+
+// ['Brazil', 'BRA', 214.3, 'Denmark', 'DK', 5.857, 'USA', 'USA', 331.9, 'Italy', 'IT', 59.11, 'Colombia', 'COL', 51.52, 'Argentina', 'ARG', 45.81]
+```
+
+## #17: .flatMap()
+
+1. **Aim:** Calls a defined callback function on each element of an array. Then, flattens the result into a new array. This is identical to a map followed by flat with depth 1.
+2. **Mutates the array?** No!
+3. **Input:** an array
+4. **Returns:**  Returns a new flattered array with the elements results from the ```.map()``` callbackfn <br>
+
+Note: It only goes *ONE* level deep,  if you want to go deeper, you still need ```.flat()```! Using ```.map()``` followed by ```.flat()``` is a really used operation
+
+```{js}
+// Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
+
+// Create Nested array of countries - 1 NESTED LEVEL:
+const countriesCodes = ['BRA', 'DK', 'USA', 'IT', 'COL', 'ARG'];
+const countriesNested = countries.map((country, i, arr) => [
+  country,
+  countriesCodes[i],
+]);
+
+console.log(countriesNested); 
+
+// output: 
+
+<!-- [["Brazil","BRA"],["Denmark","DK"],["USA","USA"],["Italy","IT"],["Colombia","COL"],[  "Argentina","ARG"]] -->
+
+// Create Nested array of countries - 2 NESTED LEVELS:
+const countriesCodes2 = ['BRA', 'DK', 'USA', 'IT', 'COL', 'ARG'];
+const countriesNested2 = countries.map((country, i, arr) => [
+  country,
+  [countriesCodes[i], countriesPOP[i]],
+]);
+console.log(countriesNested2);
+
+// output: 
+
+<!-- [["Brazil",["BRA",214.3]],["Denmark",[        "DK",5.857]],["USA",["USA",331.9]],["Italy",[ -->
+<!-- "IT",59.11]],["Colombia",["COL",51.52]],[       "Argentina",["ARG",45.81]]] -->
+
+/// FlatMap:
+
+// 1. callback - A function that accepts up to three arguments. The flatMap method calls the callback function one time for each element in the array.
+
+// 2. thisArg - An object to which the this keyword can refer in the callback function. If thisArg is omitted, undefined is used as the this value.
+
+// In Use:
+
+// With map + flat()
+const sumUpPop = countriesObjs
+  .map(country => country.population) // [214.3, 5.857, 331.9, 59.11]
+  .flat() // [214.3, 5.857, 331.9, 59.11]
+  .reduce((acc, country, i, arr) => acc + country, 0);
+
+console.log(sumUpPop); // 611.167
+
+// With flatMap()
+
+const sumUpPop2 = countriesObjs
+  .flatMap(country => country.population) // [214.3, 5.857, 331.9, 59.11]
+  .reduce((acc, country, i, arr) => acc + country, 0);
+
+console.log(sumUpPop2); // 611.167
+
+// Nested random array:
+
+const a = [[10, 20], [67, 70], 50, [30, 90]];
+
+// With map + flat()
+const sumUpPop = a
+  // .map(a => a) // [Array(2), Array(2), 50, Array(2)]
+  .flat() // [10, 20, 67, 70, 50, 30, 90]
+  .reduce((acc, a, i, arr) => acc + a, 0); // 337
+  
+// Note: works the same without .map()
+```
+
+## #18: .sort()
+
+1. **Aim:** Sorts an array in place. 
+2. **Mutates the array?** Yes!
+3. **Input:** an array
+4. **Returns:** Returns a reference to the *same* array. Returns the sorted original array.
+
+```{js}
+// Create arrays: 
+
+const countriesSpelled = ['B','r','a','z','i','l']
+const countries = ['Brazil', 'Denmark', 'USA', 'Italy', 'Colombia', 'Argentina']
+const countriesPOP = [214.3, 5.857, 331.9, 59.11, 51.52, 45.81] // in milions of people
+
+/// Some:
+
+// 1. compareFn - Function used to determine the order of the elements. It is expected to return a negative value if the first argument is less than the second argument, zero if they're equal, and a positive value otherwise. If omitted, the elements are sorted in ascending, ASCII character order.
+
+// EX: [11,2,22,1].sort((a, b) => a - b)
+
+// In Use:
+
+// A) SORTING STRINGS => WORKS ALPHABETICALLY
+
+const sortedCountries = countries.sort(); // ['Argentina', 'Brazil', 'Colombia', 'Denmark', 'Italy', 'USA']
+console.log(sortedCountries);
+
+// B) Numbers => It doesn't work properly
+
+const sortedPop = countriesPOP.sort(); // [214.3, 331.9, 45.81, 5.857, 51.52, 59.11]
+console.log(sortedPop);
+
+// INSTEAD:
+
+// ASCENDING ORDER:
+const sortedPop2 = countriesPOP.sort((a, b) => a - b); // [5.857, 45.81, 51.52, 59.11, 214.3, 331.9]
+console.log(sortedPop2);
+
+// DECREASING ORDER:
+const sortedPop3 = countriesPOP.sort((a, b) => b - a); // [331.9, 214.3, 59.11, 51.52, 45.81, 5.857]
+console.log(sortedPop3);
+```
 
 &#128021; Au-au! Our array's methods *cheatsheet* is getting pretty cool! 
 
