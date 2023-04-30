@@ -1,0 +1,208 @@
+---
+title: "#7: Creating random numbers"
+weight: 3
+subtitle: "#7: Notes on Creating random numbers"
+excerpt: "#7: Notes on Creating random numbers"
+date: 2023-04-30
+draft: false
+---
+
+*Shall we start with notes on Creating random numbers ?*
+
+Ps: Notes based on Jonas Schmedtmann’s course on Udemy -- **No credits intended**
+
+
+
+## A) Intro to Math.random()
+
+1. **Aim:** Create random numbers
+2. **Mutates the array?** N/A
+3. **Input:** a number
+4. **Returns:** Returns a pseudorandom number between 0 and 1.
+5. **Does type coercion?** N/A
+
+
+```js
+// Parameters:
+
+// N/A
+
+// In practice:
+
+console.log(Math.random()); // returns a number from 0 to 0.9999999999999...
+```
+
+
+<script type="text/javascript">
+// Parameters:
+
+// N/A
+
+// In practice:
+
+console.log(Math.random()); // returns a number from 0 to 0.9999999999999...
+</script>
+
+## B) Number within 1 and 10
+
+How to create random numbers within 1 and 10
+
+Note: This code is from [this][1] Youtube video
+
+
+```js
+
+// Code: 
+
+console.log(Math.floor(Math.random() * 10) + 1);
+
+// Why does it work? (I guess)
+
+// Considering any X random number:
+
+// 1. The smallest number is 0 * 10 = 0, so Math.floor() returns 0 if X = 0
+// 2. and the greatest number is  1 * 10 = 10, so floor returns 9 if X = 10
+// 3. Hence, we add 1 to the min value (0) so that it becomes 1 and to the max value (9) so that it becomes 10
+```
+
+
+<script type="text/javascript">
+
+// Code: 
+
+console.log(Math.floor(Math.random() * 10) + 1);
+
+// Why does it work? (I guess)
+
+// Considering any X random number:
+
+// 1. The smallest number is 0 * 10 = 0, so Math.floor() returns 0 if X = 0
+// 2. and the greatest number is  1 * 10 = 10, so floor returns 9 if X = 10
+// 3. Hence, we add 1 to the min value (0) so that it becomes 1 and to the max value (9) so that it becomes 10
+</script>
+
+## C) #1 Rolling a dice
+
+How to row a dice using ````Math.trunc()``` and ```Math.random()``` 
+
+
+```js
+
+// Code: 
+
+console.log(Math.trunc(Math.random() * 6) + 1)
+
+// Why does it work? (I guess)
+
+// 1. Return a random number between 0 and 0 and 0.999999999999....
+
+console.log(Math.random());
+
+// 2. Return a random number between 0 and 5
+
+console.log(Math.random() * 6);
+
+// 3. Remove the decimal part
+
+console.log(Math.trunc(Math.random() * 6))
+
+// 5. Up to this point, the max value is 5 (not 6, as expected)
+
+// A) Math.random() returns a value close to 1, but NOT 1 itself, hence the maximum value is 6 * 0.99999999, which will return 5 and not 6
+// B) So, that's why we have to +1 
+// C) Hence, min becomes 0 + 1  (1) and max becomes 5 + 1 (6)
+
+console.log(Math.trunc(Math.random() * 6) + 1)
+```
+
+
+<script type="text/javascript">
+
+// Code: 
+
+console.log(Math.trunc(Math.random() * 6) + 1)
+
+// Why does it work? (I guess)
+
+// 1. Return a random number between 0 and 0 and 0.999999999999....
+
+console.log(Math.random());
+
+// 2. Return a random number between 0 and 5
+
+console.log(Math.random() * 6);
+
+// 3. Remove the decimal part
+
+console.log(Math.trunc(Math.random() * 6))
+
+// 5. Up to this point, the max value is 5 (not 6, as expected)
+
+// A) Math.random() returns a value close to 1, but NOT 1 itself, hence the maximum value is 6 * 0.99999999, which will return 5 and not 6
+// B) So, that's why we have to +1 
+// C) Hence, min becomes 0 + 1  (1) and max becomes 5 + 1 (6)
+
+console.log(Math.trunc(Math.random() * 6) + 1)
+</script>
+
+## C) #2 Rolling a dice
+
+How to row a dice using ````Math.trunc()``` and ```Math.random()``` 
+
+Note: Code from [this][2]
+
+
+```js
+// Code: 
+
+console.log(Math.floor(Math.random() * 6) + 1)
+
+// Why does it work? (I guess)
+
+// 1. Return a random number between 0 and 0.999999999999....
+
+console.log(Math.random());
+
+// 2. Return a random number between 0 and 5
+
+console.log(Math.random() * 6);
+
+// 3. Round down X:
+
+console.log(Math.floor(Math.random() * 6));
+
+// 6. Now, max is 5 
+
+console.log(Math.floor(Math.random() * 6) +1);
+```
+
+
+<script type="text/javascript">
+// Code: 
+
+console.log(Math.floor(Math.random() * 6) + 1)
+
+// Why does it work? (I guess)
+
+// 1. Return a random number between 0 and 0.999999999999....
+
+console.log(Math.random());
+
+// 2. Return a random number between 0 and 5
+
+console.log(Math.random() * 6);
+
+// 3. Round down X:
+
+console.log(Math.floor(Math.random() * 6));
+
+// 6. Now, max is 5 
+
+console.log(Math.floor(Math.random() * 6) +1);
+</script>
+
+&#128021; Au-au! This section will be written soon! 
+
+[1]:https://www.youtube.com/watch?v=1Rq_LrpcgIM
+[2]:https://www.youtube.com/watch?v=UZqSpuUJPa0
+

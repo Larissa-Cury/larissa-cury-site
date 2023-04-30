@@ -1,0 +1,45 @@
+---
+title: "#5: Introduction to numbers"
+weight: 3
+subtitle: "#5: Notes on Introduction to numbers"
+excerpt: "#5: Notes on Introduction to numbers"
+date: 2023-04-30
+draft: false
+---
+
+*Shall we start with notes on Introduction to numbers?*
+
+Differently from the other sections up to now, I've decided to create isolated sections according to the functions' usage. That being said, this page will serve more of a *"guide"* in which I'll later link the accesses to the other pages.
+
+Ps: Notes based on Jonas Schmedtmann's course on Udemy -- **No credits intended**
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+```
+
+## Guides
+
+## Rouding Numbers
+
+Please click [here][1] 
+
+## Generating random numbers
+
+Please click [here][2] 
+
+<br>
+
+<center>
+
+![](https://cdn.kibrispdr.org/data/1796/to-be-continued-gif-21.jpg) <br>
+(*gif from Google Images*)
+
+</center>
+
+<br>
+
+🐕 Au-au! This section will be written soon!
+
+[1]:https://larissascury.rbind.io/enblog/learning-js-series-en/rounding-numbers/
+[2]:https://larissascury.rbind.io/enblog/learning-js-series-en/creating-random-numbers/
