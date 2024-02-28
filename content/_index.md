@@ -4,7 +4,7 @@ subtitle: "Psicolinguista em formação | Entusiasta de Estatística com R"
 description: ""
 date: 2019-02-18T12:27:33-06:00
 images:
-  - img/photoHomePage.png
+  - img/photoHomePageNew.png
 image_left: false
 text_align_left: false
 show_social_links: true # specify social accounts in site config
