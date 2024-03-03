@@ -48,7 +48,7 @@ enableEmoji = true
   # use a built-in color theme
   # one of: forest / grayscale / peach / plum /
   #         poppy / sky / violet / water 
-  theme = "peach"
+  theme = "forest"
   
   # or, leave theme empty & make your own palette
   # see docs at https://hugo-apero.netlify.app/blog/color-themes/
@@ -125,11 +125,11 @@ enableEmoji = true
  ##    title = "Project Portfolio"
  ##    url = "/project/"
  ##    weight = 3
- ##  [[menu.header]]
- ##    name = "Talks"
- ##    title = "Talks"
- ##    url = "/talk/"
- ##    weight = 4
+   [[menu.header]]
+     name = "Talks"
+     title = "Talks"
+     url = "/talk/"
+     weight = 4
     
   # Configure footer  
   ## [[menu.footer]]
