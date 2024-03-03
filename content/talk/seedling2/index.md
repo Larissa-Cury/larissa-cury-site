@@ -20,6 +20,6 @@ links:
   url: https://revistaseletronicas.pucrs.br/ojs/index.php/letronica/article/view/44413
 ---
 
-## Como Citar 
+## How to cite: 
 Lemke, C., Cury, L., Weissheimer, J., Mota, N., & Finger, I. (2023). Uma investigação longitudinal sobre conectividade do pensamento e complexidade sintática na produção escrita de crianças bilíngues durante a pandemia de COVID-19. Letrônica, 16(1), e44413. https://doi.org/10.15448/1984-4301.2023.1.44413
 
