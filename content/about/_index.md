@@ -1,5 +1,5 @@
 ---
-title: "Sobre"
+title: "About"
 description: |
   A Hugo theme made for R Markdown users.
 show_header: true
