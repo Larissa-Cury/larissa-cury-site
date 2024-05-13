@@ -1,6 +1,6 @@
 ---
 title: "Larissa Cury"
-subtitle: "Psicolinguista em formação | Entusiasta de Estatística com R"
+subtitle: "Statistics for non-staticians"
 description: ""
 date: 2019-02-18T12:27:33-06:00
 images:
@@ -10,7 +10,7 @@ text_align_left: false
 show_social_links: true # specify social accounts in site config
 show_action_link: true
 action_link: /about
-action_label: "Sobre mim &rarr;"
+action_label: "About me &rarr;"
 action_type: text # text, button
 type: home
 ---
