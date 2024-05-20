@@ -13,7 +13,11 @@ layout: single # layout options: single, single-sidebar
 ---
 # Frequency distributions
 
+<<<<<<< HEAD
 A frequency distribution is a tabular representation of data **showing the number of times each observation appears in the dataset**. In visual representations, such as **histograms**, the *x*-axis typically displays the observed values, while the *y*-axis represents their corresponding frequencies, showing how often each value occurs. 📅📝
+=======
+A frequency distribution is a tabular representation of data **showing the number of times each observation appears in the dataset**. In visual representations, such as **histograms**, the *x*-axis typically displays the observed values, while the *y*-axis represents their corresponding frequencies, showing how often each value occurs. 📅
+>>>>>>> 6ea2f85f5421effc520fdbd81762ff357c2b82b4
 
 For example, suppose you have collected data on a proficiency test for Class A, in which there are 15 students. These are their scores:
 
