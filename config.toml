@@ -81,7 +81,11 @@ enableEmoji = true
       icon      = "orcid" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "https://orcid.org/0000-0002-3184-8982"
-  [[params.social]]
+    [[params.social]]
+      icon      = "google-scholar" # icon name without the 'fa-'
+      icon_pack = "ai"
+      url       = "https://scholar.google.com/citations?user=Z5CM8TwAAAAJ&hl=en&oi=ao"    
+    [[params.social]]
        icon      = "twitter" # icon name without the 'fa-'
        icon_pack = "fab"
        url       = "https://twitter.com/larissascury"
