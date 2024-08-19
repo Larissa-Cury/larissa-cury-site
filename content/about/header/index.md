@@ -11,4 +11,7 @@ headline: |
 
 I fell in love with scientific methodology and statistics with R. Nowadays, I'm preparing myself to pursue a PhD somewhere where I can strengthen those skills and abilities.
 
-The initial idea of this website was to help fellow colleagues understand a bit more about Stats and programming. I have always been passionate about learning (I've literally just started to learn Python). I hope this portal becomes a great opportunity to share learning experiences! &#128513; </p>
+The initial idea of this website was to help fellow colleagues understand a bit more about Stats and programming. I have always been passionate about learning (I've literally just started to learn Python). I hope this portal becomes a great opportunity to share learning experiences! &#128513;
+
+Ps: This whole website was built in R! Isn't that amazing?! 🤩
+</p>
