@@ -7,11 +7,9 @@ headline: |
 ---
 
 <!-- this is a subheadline -->
-<p align= "justify">I hold a Summa Cum Laude degree in Linguistics TEST3 the Federal University of Rio de Janeiro (UFRJ). I also hold a Master's degree in Psycholinguistics from the Federal University of Rio Grande do Sul (UFRGS), with an emphasis on the Psycholinguistics of Bilingualism, under the guidance of Professor Ingrid Finger. During my MA, my main research focus was on investigating how Executive Functions were related to the initial reading skills of bilingual children (especially Working Memory).
+<p align= "justify"> I am a self-taught data analyst with expertise in R and statistical methods, developed through analyzing undergraduate projects, Master’s theses, and PhD dissertations.
 
-I fell in love with scientific methodology and Statistics with R. Currently, I'm preparing myself to pursue a PhD somewhere where I can strengthen those skills.
-
-The initial idea of this website was to help fellow colleagues understand a bit more about Stats and programming. I have always been passionate about learning (I've literally just started to learn Python). I hope this portal becomes a great opportunity to share learning experiences! &#128513;
+I have been expanding my expertise towards more industry-related tools like Excel, SQL, Power BI, and Python. I am looking forward to delivering data-driven insights and solutions in a business context with these tools.
 
 Ps: This whole website was built in R! Isn't that amazing?! 🤩
 </p>

@@ -73,6 +73,27 @@ enableEmoji = true
   # Icon pack "fab" includes brand icons, see: https://fontawesome.com/icons?d=gallery&s=brands&m=free
   # Icon pack "fas" includes solid icons, see: https://fontawesome.com/icons?d=gallery&s=solid&m=free
   # Icon pack "far" includes regular icons, see: https://fontawesome.com/icons?d=gallery&s=regular&m=free
+
+  #  [[params.social]]
+   #    icon      = "twitter" # icon name without the 'fa-'
+    #   icon_pack = "fab"
+     #  url       = "https://twitter.com/larissascury"
+#  [[params.social]]
+ #     icon      = "instagram" # icon name without the 'fa-'
+  #    icon_pack = "fab"
+   #   url       = "https://www.instagram.com/larissascury/"
+  [[params.social]]
+      icon      = "linkedin" # icon name without the 'fa-'
+      icon_pack = "fab"
+      url       = "https://www.linkedin.com/in/larissa-cury/"
+  [[params.social]]
+      icon      = "github" # icon name without the 'fa-'
+      icon_pack = "fab"
+      url       = "https://github.com/Larissa-Cury"
+  [[params.social]]
+      icon      = "youtube" # icon name without the 'fa-'
+      icon_pack = "fab"
+      url       = "https://www.youtube.com/@LarissaCuryAn%C3%A1lisedeDados"
   [[params.social]]
       icon      = "lattes" # icon name without the 'fa-'
       icon_pack = "ai"
@@ -81,22 +102,10 @@ enableEmoji = true
       icon      = "orcid" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "https://orcid.org/0000-0002-3184-8982"
-    [[params.social]]
+  [[params.social]]
       icon      = "google-scholar" # icon name without the 'fa-'
       icon_pack = "ai"
       url       = "https://scholar.google.com/citations?user=Z5CM8TwAAAAJ&hl=en&oi=ao"    
-    [[params.social]]
-       icon      = "twitter" # icon name without the 'fa-'
-       icon_pack = "fab"
-       url       = "https://twitter.com/larissascury"
-  [[params.social]]
-      icon      = "instagram" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://www.instagram.com/larissascury/"
-  [[params.social]]
-      icon      = "github" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://github.com/Larissa-Cury"
 
 [taxonomies]
   category = "categories"
