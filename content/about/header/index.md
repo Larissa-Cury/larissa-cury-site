@@ -7,7 +7,7 @@ headline: |
 ---
 
 <!-- this is a subheadline -->
-<p align= "justify">I hold a Summa Cum Laude degree in Linguistics TEST2 the Federal University of Rio de Janeiro (UFRJ). I also hold a Master's degree in Psycholinguistics from the Federal University of Rio Grande do Sul (UFRGS), with an emphasis on the Psycholinguistics of Bilingualism, under the guidance of Professor Ingrid Finger. During my MA, my main research focus was on investigating how Executive Functions were related to the initial reading skills of bilingual children (especially Working Memory).
+<p align= "justify">I hold a Summa Cum Laude degree in Linguistics TEST3 the Federal University of Rio de Janeiro (UFRJ). I also hold a Master's degree in Psycholinguistics from the Federal University of Rio Grande do Sul (UFRGS), with an emphasis on the Psycholinguistics of Bilingualism, under the guidance of Professor Ingrid Finger. During my MA, my main research focus was on investigating how Executive Functions were related to the initial reading skills of bilingual children (especially Working Memory).
 
 I fell in love with scientific methodology and Statistics with R. Currently, I'm preparing myself to pursue a PhD somewhere where I can strengthen those skills.
 
