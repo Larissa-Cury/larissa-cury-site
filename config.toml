@@ -133,16 +133,16 @@ enableEmoji = true
 ##    title = "Blog"
 ##    url = "/blog/"
 ##    weight = 2
- ## [[menu.header]]
- ##    name = "Projects"
- ##    title = "Project Portfolio"
- ##    url = "/project/"
- ##    weight = 3
-   [[menu.header]]
-     name = "Publications"
-     title = "Publications"
-     url = "/Publications/"
-     weight = 4
+  [[menu.header]]
+     name = "Projects"
+    title = "Project Portfolio"
+    url = "/project/"
+     weight = 3
+##   [[menu.header]]   # HIDE PUBLICATIONS PAGE
+  ##   name = "Publications"
+##     title = "Publications"
+##     url = "/Publications/"
+ ##    weight = 4
     
   # Configure footer  
   ## [[menu.footer]]
